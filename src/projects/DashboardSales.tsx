@@ -27,7 +27,7 @@ export default function DashboardSales() {
     { product: "Produit D", price: 20, quantity: 3 },
   ];
 
-  const [sales, setSales] = useState<Sale[]>(initialSales);
+  const [sales, _] = useState<Sale[]>(initialSales);
   const [filter, setFilter] = useState("");
 
   const filteredSales = sales.filter(s =>
