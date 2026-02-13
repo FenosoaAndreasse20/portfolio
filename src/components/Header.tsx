@@ -40,7 +40,7 @@ export default function Header({ lang }: Props) {
             </a>
 
             <a
-              href="https://linkedin.com/in/fenosoa-andreasse-andrinomenjanahary-442372283"
+              href="https://linkedin.com/in/fenosoa-andreasse-andrinomenjanahary"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-600 transition"

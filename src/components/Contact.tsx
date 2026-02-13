@@ -12,7 +12,7 @@ export default function Contact({ lang }: Props) {
         <p className="text-gray-700 dark:text-gray-300"><strong>{translations[lang].email}:</strong> andrinomenjanaharyfenosoa@gmail.com</p>
         <p className="text-gray-700 dark:text-gray-300"><strong>{translations[lang].location}:</strong> Antananarivo, Madagascar</p>
         <p className="text-gray-700 dark:text-gray-300"><strong>GitHub:</strong> github.com/FenosoaAndreasse20</p>
-        <p className="text-gray-700 dark:text-gray-300"><strong>LinkedIn:</strong> linkedin.com/in/fenosoa-andreasse-andrinomenjanahary-442372283</p>
+        <p className="text-gray-700 dark:text-gray-300"><strong>LinkedIn:</strong> linkedin.com/in/fenosoa-andreasse-andrinomenjanahary</p>
       </div>
     </section>
   );
