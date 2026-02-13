@@ -8,8 +8,8 @@ interface Props {
 
 export default function Header({ lang }: Props) {
   return (
-    <header className="min-h-screen px-6 flex items-center">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+    <header className="min-h-screen flex items-center px-6" >
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center w-full h-screen">
 
         {/* TEXTE À GAUCHE */}
         <div className="space-y-6 text-center md:text-left">
@@ -60,11 +60,11 @@ export default function Header({ lang }: Props) {
         </div>
 
         {/* IMAGE À DROITE – GRANDE, SANS FOND */}
-        <div className="flex justify-center md:justify-end h-[80vh]">
+        <div className="flex justify-center mx-auto md:justify-end h-full ">
           <img
             src={profilePic}
             alt="Fenosoa Andreasse"
-            className="h-full w-auto object-contain"
+            className="w-auto object-cover"
           />
         </div>
 
