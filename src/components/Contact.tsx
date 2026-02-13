@@ -6,7 +6,7 @@ interface Props {
 
 export default function Contact({ lang }: Props) {
   return (
-    <section className="bg-gray-50 dark:bg-gray-900 py-12 px-4">
+    <section id="contact" className="bg-gray-50 dark:bg-gray-900 py-12 px-4">
       <div className="max-w-5xl mx-auto text-center space-y-2">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100">{translations[lang].contact}</h2>
         <p className="text-gray-700 dark:text-gray-300"><strong>{translations[lang].email}:</strong> andrinomenjanaharyfenosoa@gmail.com</p>

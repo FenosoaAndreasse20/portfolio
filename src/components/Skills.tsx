@@ -29,7 +29,7 @@ export default function Skills({ lang }: Props) {
   );
 
   return (
-    <section className="bg-white dark:bg-gray-800 py-12 px-4">
+    <section id="techno" className="bg-white dark:bg-gray-800 py-12 px-4">
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
         {renderList(translations[lang].frontend, frontend)}
         {renderList(translations[lang].backend, backend)}
