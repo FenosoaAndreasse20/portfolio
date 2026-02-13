@@ -1,10 +1,10 @@
 // src/i18n.ts
 export const translations = {
   fr: {
-    headerSubtitle: "Développeuse Fullstack React / Node.js",
+    headerSubtitle: "Développeuse Fullstack JavaScript",
     headerDescription: "Je développe des applications web modernes avec React, Node.js et des bases de données SQL.",
     aboutTitle: "À propos de moi",
-    aboutText: "Développeuse fullstack junior diplômée en informatique (Licence + Master 1), avec expérience concrète en développement frontend et backend. J’ai travaillé avec React.js, Node.js, API REST et bases de données PostgreSQL/MySQL sur des projets professionnels.",
+    aboutText: "Développeuse fullstack junior diplômée en informatique (Licence + Master 2), avec expérience concrète en développement frontend et backend. J’ai travaillé avec React.js, Node.js, API REST et bases de données PostgreSQL/MySQL sur des projets professionnels.",
     projects: "Projets",
    projectsList: [
   {
@@ -37,10 +37,10 @@ export const translations = {
 
   },
   en: {
-    headerSubtitle: "Fullstack React / Node.js Developer",
+    headerSubtitle: "Fullstack JavaScript",
     headerDescription: "I develop modern web applications with React, Node.js and SQL databases.",
     aboutTitle: "About Me",
-    aboutText: "Junior fullstack developer with a degree in Computer Science (Bachelor + Master 1), with practical experience in frontend and backend development. Worked with React.js, Node.js, REST APIs and PostgreSQL/MySQL on professional projects.",
+    aboutText: "Junior fullstack developer with a degree in Computer Science (Bachelor + Master 2), with practical experience in frontend and backend development. Worked with React.js, Node.js, REST APIs and PostgreSQL/MySQL on professional projects.",
     projects: "Projects",
  projectsList: [
     {
