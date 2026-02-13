@@ -24,14 +24,14 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500 scroll-smooth">
       <div className="flex justify-end items-center gap-4 p-4 max-w-5xl mx-auto">
-        {/* <ToggleLang
+        <ToggleLang
           lang={lang}
           toggleLang={() => setLang(lang === "fr" ? "en" : "fr")}
-        /> */}
-        {/* <ToggleDarkMode
+        />
+        <ToggleDarkMode
           darkMode={darkMode}
           toggleDarkMode={() => setDarkMode(!darkMode)}
-        /> */}
+        />
       </div>
 
       <Header lang={lang} />
