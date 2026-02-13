@@ -12,10 +12,8 @@ export default function Header({ lang }: Props) {
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center w-full h-screen">
 
         {/* TEXTE À GAUCHE */}
-        <div className="space-y-6 text-center md:text-left">
-          <p className="text-sm uppercase tracking-widest text-blue-600">
-            Hello 👋
-          </p>
+        <div className=" text-center md:text-left">
+          
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
             ANDRINOMENJANAHARY <br />
