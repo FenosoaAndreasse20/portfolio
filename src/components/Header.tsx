@@ -1,5 +1,6 @@
-import profilePic from "../assets/imagePro.jpg";
+import profilePic from "../assets/PhotoHeader.png";
 import { translations } from "../i18n";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 interface Props {
   lang: "fr" | "en";
@@ -7,42 +8,66 @@ interface Props {
 
 export default function Header({ lang }: Props) {
   return (
-    <header className="p-12">
-      <div className="max-w-5xl mx-auto flex flex-col items-center text-center gap-6">
-        <img
-          src={profilePic}
-          alt="Fenosoa Andreasse"
-      className="w-60 sm:w-72 md:w-80 h-auto rounded-md shadow-lg"
-        />
-    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight break-words">
-          ANDRINOMENJANAHARY Fenosoa Andreasse
-          </h1>
-    <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400">
-          {translations[lang].headerSubtitle}
-          </p>
-    <p className="mt-1 text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-400">
-          {translations[lang].headerDescription}
+    <header className="min-h-screen px-6 flex items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+
+        {/* TEXTE À GAUCHE */}
+        <div className="space-y-6 text-center md:text-left">
+          <p className="text-sm uppercase tracking-widest text-blue-600">
+            Hello 👋
           </p>
 
-        {/* GitHub & LinkedIn */}
-        <div className="flex gap-4 mt-4">
-          <a
-            href="https://github.com/FenosoaAndreasse20"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-gray-800 text-white px-6 py-2 rounded hover:bg-gray-900 transition"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://linkedin.com/in/fenosoa-andreasse-andrinomenjanahary-442372283"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700 transition"
-          >
-            LinkedIn
-          </a>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+            ANDRINOMENJANAHARY <br />
+            <span className="text-blue-600">Fenosoa Andreasse</span>
+          </h1>
+
+          <p className="text-lg text-gray-600 dark:text-gray-400">
+            {translations[lang].headerSubtitle}
+          </p>
+
+          <p className="text-gray-600 dark:text-gray-400 max-w-xl">
+            {translations[lang].headerDescription}
+          </p>
+
+          {/* ICÔNES */}
+          <div className="flex justify-center md:justify-start gap-6 text-2xl pt-4">
+            <a
+              href="https://github.com/FenosoaAndreasse20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition"
+            >
+              <FaGithub />
+            </a>
+
+            <a
+              href="https://linkedin.com/in/fenosoa-andreasse-andrinomenjanahary-442372283"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 transition"
+            >
+              <FaLinkedin />
+            </a>
+
+            <a
+              href="mailto:fenosoa.andreasse@gmail.com"
+              className="hover:text-blue-600 transition"
+            >
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
+
+        {/* IMAGE À DROITE – GRANDE, SANS FOND */}
+        <div className="flex justify-center md:justify-end h-[80vh]">
+          <img
+            src={profilePic}
+            alt="Fenosoa Andreasse"
+            className="h-full w-auto object-contain"
+          />
+        </div>
+
       </div>
     </header>
   );
