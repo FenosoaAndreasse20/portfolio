@@ -1,7 +1,6 @@
 import profilePic from "../assets/PhotoHeader.jpg";
 import { translations } from "../i18n";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
-import Navbar from "./Navbar";
 
 interface Props {
   lang: "fr" | "en";

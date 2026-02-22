@@ -1,6 +1,4 @@
 import { useState } from "react";
-import ToggleLang from "./ToggleLang";
-import ToggleDarkMode from "./ToggleDarkMode";
 import { BsThreeDots } from "react-icons/bs";
 
 interface Props {
