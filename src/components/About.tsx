@@ -1,5 +1,5 @@
 import { translations } from "../i18n";
-import aboutPic from "../assets/PhotoAboutMe.png";
+import aboutPic from "../assets/PhotoAboutMe.jpg";
 
 interface Props {
   lang: "fr" | "en";
@@ -9,7 +9,7 @@ export default function About({ lang }: Props) {
   return (
     <section
       id="about"
-      className="bg-white dark:bg-gray-800 py-20 px-4"
+      className="bg-white dark:bg-gray-800 py-20 px-4 pt-20"
     >
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         

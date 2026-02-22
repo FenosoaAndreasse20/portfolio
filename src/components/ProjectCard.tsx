@@ -27,7 +27,7 @@ export default function ProjectCard({
         <img
           src={images[current]}
           alt={title}
-          className="w-full h-56 object-cover"
+          className="w-full aspect-video object-contain rounded-t-xl"
         />
 
         {images.length > 1 && (

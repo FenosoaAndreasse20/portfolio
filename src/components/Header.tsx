@@ -1,4 +1,4 @@
-import profilePic from "../assets/PhotoHeader.png";
+import profilePic from "../assets/PhotoHeader.jpg";
 import { translations } from "../i18n";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import Navbar from "./Navbar";
@@ -10,14 +10,13 @@ interface Props {
 export default function Header({ lang }: Props) {
   return (
     <>
-      <Navbar />
-      <header  id="header" className="min-h-screen flex items-center px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 justify-center items-center w-full h-screen">
+      <header  id="header" className="min-h-screen flex items-center px-6 pt-20">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 md:gap-6 lg:gap-10 gap-10 justify-center items-center w-full">
           {/* TEXTE À GAUCHE */}
           <div className=" text-center md:text-left">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
-              ANDRINOMENJANAHARY <br />
-              <span className="text-blue-600">Fenosoa Andreasse</span>
+<h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
+                ANDRINOMENJANAHARY <br />
+              <span>Fenosoa Andreasse</span>
             </h1>
 
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -49,7 +48,7 @@ export default function Header({ lang }: Props) {
               </a>
 
               <a
-                href="mailto:fenosoa.andreasse@gmail.com"
+                href="mailto:andrinomenjanaharyfenosoa@gmail.com"
                 className="hover:text-blue-600 transition"
               >
                 <FaEnvelope />
@@ -57,14 +56,14 @@ export default function Header({ lang }: Props) {
             </div>
           </div>
 
-          {/* IMAGE À DROITE – GRANDE, SANS FOND */}
-          <div className="flex justify-center mx-auto md:justify-end h-full ">
-            <img
-              src={profilePic}
-              alt="Fenosoa Andreasse"
-              className="w-auto object-cover"
-            />
-          </div>
+          {/* IMAGE À DROITE */}
+          <div className="flex justify-center md:justify-end">
+      <img
+        src={profilePic}
+        alt="Fenosoa Andreasse"
+        className="w-52 sm:w-64  md:w-72 lg:w-96 h-auto object-cover rounded-2xl shadow-lg"
+      />
+    </div>
         </div>
       </header>
     </>

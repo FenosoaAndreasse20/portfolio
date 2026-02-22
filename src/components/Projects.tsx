@@ -9,6 +9,12 @@ import gafi1 from "../assets/gafi-1.png";
 import gafi2 from "../assets/gafi-2.png";
 import gafi3 from "../assets/gafi-3.png";
 
+import Portfolio1 from "../assets/PortfolioHeader.png";
+import Portfolio2 from "../assets/PortfolioAboutMe.png";
+import Portfolio3 from "../assets/PortfolioProjects.png";
+import Portfolio4 from "../assets/PortfoliotechnoetContact.png";
+
+
 
 interface Props {
   lang: "fr" | "en";
@@ -28,6 +34,12 @@ export default function Projects({ lang }: Props) {
         "Dashboard de suivi et de mise à jour de la conformité aux recommandations GAFI.",
       images: [gafi1, gafi2, gafi3],
     },
+    {
+      title: "Mon Portfolio",
+      description:
+            "Mon site personnel qui présente mes projets, mes compétences et mon parcours en développement web.",
+      images: [Portfolio1, Portfolio2, Portfolio3, Portfolio4],
+    }
   ];
 
   return (
@@ -37,7 +49,7 @@ export default function Projects({ lang }: Props) {
           {translations[lang].projects}
         </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

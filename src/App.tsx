@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import ToggleDarkMode from "./components/ToggleDarkMode";
-import ToggleLang from "./components/ToggleLang";
 
 function App() {
+  // État pour le thème
   const [darkMode, setDarkMode] = useState(false);
+  // État pour la langue
   const [lang, setLang] = useState<"fr" | "en">("fr");
 
-  // ✅ ICI LA MAGIE
+  // Applique la classe "dark" sur le <html> si darkMode est activé
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -23,24 +24,27 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans transition-colors duration-500 scroll-smooth">
-      <div className="flex justify-end items-center gap-4 p-4 max-w-5xl mx-auto">
-        <ToggleLang
-          lang={lang}
-          toggleLang={() => setLang(lang === "fr" ? "en" : "fr")}
-        />
-        <ToggleDarkMode
-          darkMode={darkMode}
-          toggleDarkMode={() => setDarkMode(!darkMode)}
-        />
-      </div>
+      
+      {/* Navbar avec gestion du thème et de la langue */}
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        lang={lang}
+        setLang={setLang}
+      />
 
+      {/* Header */}
       <Header lang={lang} />
+
+      {/* Sections principales */}
       <main>
         <About lang={lang} />
         <Projects lang={lang} />
         <Skills lang={lang} />
         <Contact lang={lang} />
       </main>
+
+      {/* Footer */}
       <Footer lang={lang} />
     </div>
   );
